@@ -18,7 +18,7 @@ void _add(stack_t **head, unsigned int x)
 	}
 	if (len < 2)
 	{
-		fprintf(stderr, "L%d: can't add elements, stack less than 2\n", x);
+		fprintf(stderr, "L%d: can't add, stack too short\n", x);
 		fclose(bus.file);
 		free(bus.content);
 		free_stack(*head);

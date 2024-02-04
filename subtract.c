@@ -16,7 +16,7 @@ void _sub(stack_t **head, unsigned int x)
 		mem = mem->next;
 	if (nodes < 2)
 	{
-		fprintf(stderr, "L%d: can't sub, nodes less than 2\n", x);
+		fprintf(stderr, "L%d: can't sub, stack too short\n", x);
 		fclose(bus.file);
 		free(bus.content);
 		free_stack(*head);
