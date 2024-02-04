@@ -28,5 +28,4 @@ void f_mul(stack_t **head, unsigned int counter)
 	aux = h->next->n * h->n;
 	h->next->n = aux;
 	*head = h->next;
-	free(h);
-
+}

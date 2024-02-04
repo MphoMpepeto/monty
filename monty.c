@@ -1,5 +1,8 @@
+#define _GNU_SOURCE
 #include "monty.h"
+
 bus_t bus = {NULL, NULL, NULL, 0};
+
 /**
 * main - monty code interpreter
 * @argc: number of arguments
@@ -41,5 +44,5 @@ int main(int argc, char *argv[])
 	}
 	free_stack(stack);
 	fclose(file);
-return (0);
+	return (0);
 }
