@@ -3,14 +3,14 @@
 /**
  * stack_string - prints a string from the top of the stack
  * @h: a diouble pointer to the head of the stack
- * @n: counter of the elements of the stack
+ * @j: counter of the elements of the stack
  * Return: nothing
  */
 
-void stack_string(stack_t **h, unsigned int n)
+void stack_string(stack_t **h, unsigned int j)
 {
 	stack_t *head;
-	void n;
+	void j;
 
 	head = *h;
 	while (head)

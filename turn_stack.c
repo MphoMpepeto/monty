@@ -3,12 +3,13 @@
 /**
  * turn_stack - turns the stack around from the bottom
  * @h: a double pointer to the head of a stack
- * @n: a counter for the line number
+ * @ear
+ * : a counter for the line number
  *
  * Return: nothing
  */
 
-void turn_stack(stack_t **h, unsigned int n)
+void turn_stack(stack_t **h, __attribute__((unused)) unsigned int k)
 {
 	stack_t *cpy;
 

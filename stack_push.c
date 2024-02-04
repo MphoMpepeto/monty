@@ -2,11 +2,11 @@
 /**
  * push_stack - a function that adds a node to the stack
  * @h: a double pointer to the head of the stack
- * @n: counts the line number
+ * @k: counts the line number
  * Return: nothing
 */
 
-void push_stack(stack_t **h, unsigned int n)
+void push_stack(stack_t **h, unsigned int k)
 {
 	int i, j = 0, flag = 0;
 
@@ -21,18 +21,18 @@ void push_stack(stack_t **h, unsigned int n)
 		}
 		if (flag == 1)
 		{ 
-			fprintf(stderr, "L%d: usage: push integer\n", n);
-			fclose(bus.file);
-			free(bus.content);
+			fprintf(stderr, "L%d: usage: push integer\n", k);
+			fclose(bus.f_monty);
+			free(bus.data);
 			free_stack(*h);
 			exit(EXIT_FAILURE); 
 		}
 	}
 	else
 	{
-	       	fprintf(stderr, "L%d: usage: push integer\n", n);
-		fclose(bus.file);
-		free(bus.content);
+	       	fprintf(stderr, "L%d: usage: push integer\n", k);
+		fclose(bus.f_monty);
+		free(bus.data);
 		free_stack(*h);
 		exit(EXIT_FAILURE); 
 	}

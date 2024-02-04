@@ -10,7 +10,7 @@
  * Return: 1 on success
  */
 
-int ex_opcode(char *data, stack_t **l_list, unsigned int k, FILE *f_monty)
+int ex_opcode(char *data, stack_t **h, unsigned int k, FILE *f_monty)
 {
 	instruction_t opst[] = {
 				{"push", push_stack},
@@ -25,9 +25,9 @@ int ex_opcode(char *data, stack_t **l_list, unsigned int k, FILE *f_monty)
 				{"nop", f_nop},
 				{"mod", f_mod},
 				{"pchar", f_pchar},
-				{"pstr", f_pstr},
-				{"rotl", f_rotl},
-				{"rotr", f_rotr},
+				{"pstr", pstr},
+				{"rotate", stack_rotate},
+				{"turn", turn_stack},
 				{"queue", f_queue},
 				{"stack", f_stack},
 				{NULL, NULL},
