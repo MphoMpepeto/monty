@@ -68,7 +68,7 @@ void _pint(stack_t **head, unsigned int x);
 int execute(char *content, stack_t **head, unsigned int counter, FILE *file);
 void free_stack(stack_t *head);
 void _pop(stack_t **head, unsigned int x);
-void f_swap(stack_t **head, unsigned int counter);
+void _swap(stack_t **head, unsigned int x);
 void f_add(stack_t **head, unsigned int counter);
 void f_nop(stack_t **head, unsigned int counter);
 void f_sub(stack_t **head, unsigned int counter);
